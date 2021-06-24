@@ -7,8 +7,8 @@
 
 import Foundation
 
-// MARK: - Mine
-struct Mine: Codable {
+// MARK: - CurrentWeatherData
+struct CurrentWeatherData: Decodable {
     let coord: Coord
     let weather: [Weather]
     let base: String
@@ -24,17 +24,17 @@ struct Mine: Codable {
 }
 
 // MARK: - Clouds
-struct Clouds: Codable {
+struct Clouds: Decodable {
     let all: Int
 }
 
 // MARK: - Coord
-struct Coord: Codable {
+struct Coord: Decodable {
     let lon, lat: Double
 }
 
 // MARK: - Main
-struct Main: Codable {
+struct Main: Decodable {
     let temp, feelsLike, tempMin, tempMax: Double
     let pressure, humidity, seaLevel, grndLevel: Int
     
@@ -50,14 +50,14 @@ struct Main: Codable {
 }
 
 // MARK: - Sys
-struct Sys: Codable {
+struct Sys: Decodable {
     let type, id: Int 
     let country: String
     let sunrise, sunset: Int
 }
 
 // MARK: - Weather
-struct Weather: Codable {
+struct Weather: Decodable {
     let id: Int
     let main, weatherDescription, icon: String
     
@@ -69,7 +69,7 @@ struct Weather: Codable {
 }
 
 // MARK: - Wind
-struct Wind: Codable {
+struct Wind: Decodable {
     let speed: Double
     let deg: Int
     let gust: Double

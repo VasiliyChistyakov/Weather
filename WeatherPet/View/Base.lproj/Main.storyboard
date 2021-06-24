@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xIt-qg-tUn">
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Введите ваш город" translatesAutoresizingMaskIntoConstraints="NO" id="xIt-qg-tUn">
                                 <rect key="frame" x="0.0" y="56" width="414" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
