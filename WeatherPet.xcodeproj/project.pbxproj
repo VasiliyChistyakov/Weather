@@ -14,6 +14,7 @@
 		333073BC267EF575002BA1E3 /* WeatherPet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 333073BA267EF575002BA1E3 /* WeatherPet.xcdatamodeld */; };
 		333073BE267EF578002BA1E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 333073BD267EF578002BA1E3 /* Assets.xcassets */; };
 		333073C1267EF578002BA1E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 333073BF267EF578002BA1E3 /* LaunchScreen.storyboard */; };
+		3331493026861D79007B5367 /* UserSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3331492F26861D79007B5367 /* UserSetting.swift */; };
 		3370390A2680F75C0075FDE2 /* CurrentWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337039092680F75C0075FDE2 /* CurrentWeatherData.swift */; };
 		33703910268319EB0075FDE2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3370390F268319EB0075FDE2 /* Constants.swift */; };
 		3370391226834F900075FDE2 /* NetworkWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3370391126834F900075FDE2 /* NetworkWeatherManager.swift */; };
@@ -30,6 +31,7 @@
 		333073BD267EF578002BA1E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		333073C0267EF578002BA1E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		333073C2267EF578002BA1E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3331492F26861D79007B5367 /* UserSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSetting.swift; sourceTree = "<group>"; };
 		337039092680F75C0075FDE2 /* CurrentWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherData.swift; sourceTree = "<group>"; };
 		3370390F268319EB0075FDE2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3370391126834F900075FDE2 /* NetworkWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWeatherManager.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				337039132684A2E50075FDE2 /* CurrentWeather.swift */,
 				337039092680F75C0075FDE2 /* CurrentWeatherData.swift */,
 				3370391126834F900075FDE2 /* NetworkWeatherManager.swift */,
+				3331492F26861D79007B5367 /* UserSetting.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3331493026861D79007B5367 /* UserSetting.swift in Sources */,
 				333073BC267EF575002BA1E3 /* WeatherPet.xcdatamodeld in Sources */,
 				333073B6267EF575002BA1E3 /* ViewController.swift in Sources */,
 				337039142684A2E50075FDE2 /* CurrentWeather.swift in Sources */,

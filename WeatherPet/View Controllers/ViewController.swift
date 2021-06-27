@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var feelsLikeLabel: UILabel!
     
     let netwrokingManager = NetworkWeatherManager()
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,24 +28,21 @@ class ViewController: UIViewController {
         weatherIconImageView.isHidden = true
         feelsLikeLabel.isHidden = true
         
-        let defualtCity = fetchCities(city:"Moscow")
+        let defualtCity = fetchCities(city: (UserSetting.userCity) ?? " " )
         uploadCity(city: defualtCity)
-        
     }
     
     func fetchCities (city: String) -> String {
         
         let urlString = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(apiKey)&units=metric"
-        
         return urlString
     }
     
     func uploadCity (city: String) {
         netwrokingManager.fetchCurrentWeather(urlSting: city) { currentWeather in
-            
             DispatchQueue.main.async {
                 
-                self.cityLabel.text = currentWeather.cityName
+                self.cityLabel.text = currentWeather.cityName 
                 self.tempLabel.text = "\(currentWeather.temperatureString)°C"
                 self.feelsLikeLabel.text = " Ощущаеться как \(currentWeather.feelsLikeTemperatureString)°C"
                 self.weatherIconImageView.image = UIImage(systemName: currentWeather.systemIconNameString)
@@ -61,18 +59,12 @@ class ViewController: UIViewController {
 extension ViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        
-        
         let serchText = searchBar.text!
         let serch = fetchCities(city: serchText)
         
-        
-        // present(ac, animated: true, completion: nil)
-        
-        
+        UserSetting.userCity = serchText
         
         uploadCity(city: serch)
     }
 }
-
 
