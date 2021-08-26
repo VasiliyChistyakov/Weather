@@ -1,6 +1,6 @@
 # AppWeather
 
-The weather app on UIkit using [OpenWeather API] : https://openweathermap.org/api
+The weather app on UIkit using [OpenWeather API](https://openweathermap.org/api)
 
 - CAGradientLayer
 - URLSession
