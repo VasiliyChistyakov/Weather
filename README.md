@@ -1,6 +1,6 @@
 # AppWeather
 
-Приложение AppWeather показывает данные о погоде введеного города [OpenWeather API](https://openweathermap.org/api), сохраняет название города при повторной загрузке приложения.
+Приложение AppWeather показывает данные о погоде введеного города для получения данных используется[OpenWeather API](https://openweathermap.org/api), сохраняет название города при повторной загрузке приложения.
 
 - CAGradientLayer
 - URLSession
